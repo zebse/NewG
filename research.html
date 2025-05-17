@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Research - New Generation University College</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary-color: #040720;
+      --secondary-color: #3fbbc0;
+      --dark-color: #213b52;
+      --light-color: #f6f7f9;
+    }
+
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: calc(50% - 25px);
+    }
+
+    .research-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .research-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .research-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .research-card .card-body {
+      padding: 25px;
+    }
+
+    .research-card .badge {
+      background-color: var(--primary-color);
+    }
+
+    .stats-item {
+      padding: 30px;
+      text-align: center;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .stats-item i {
+      font-size: 42px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .stats-item h3 {
+      color: var(--primary-color);
+    }
+  </style>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="pricing-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- <img src="assets/img/logo.png" alt="" /> -->
+        <h1 class="sitename">NGUC</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul></ul>
+        <!-- Empty ul to be populated by JavaScript -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Research</h1>
+              <p class="mb-0">
+                Welcome to the research hub of NGUC, a vibrant space dedicated to discovery and innovation.
+                Explore our diverse portfolio of cutting-edge projects, spanning various disciplines and driven by
+                faculty and students committed to advancing knowledge. Learn about our research centers, publications,
+                and the impactful contributions we make to society and the global academic community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Research and Projects</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- ======= Research Areas Section ======= -->
+    <!-- ======= Research Areas Section ======= -->
+    <section id="research" class="research py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Our Research Areas</h2>
+          <p class="text-muted">Explore our diverse research programs and initiatives</p>
+        </div>
+
+        <div class="row">
+          <!-- Research Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top" alt="Artificial Intelligence">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">AI & Machine Learning</span>
+                <h4 class="card-title">Advancements in Deep Learning</h4>
+                <p class="card-text">Exploring novel neural network architectures for complex problem solving in
+                  healthcare and climate modeling.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                class="card-img-top" alt="Biotechnology">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">Biotechnology</span>
+                <h4 class="card-title">Gene Editing Breakthroughs</h4>
+                <p class="card-text">Developing CRISPR-based therapies for genetic disorders with improved precision and
+                  safety profiles.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                class="card-img-top" alt="Renewable Energy">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">Sustainable Energy</span>
+                <h4 class="card-title">Next-Gen Solar Cells</h4>
+                <p class="card-text">Perovskite solar cells achieving record efficiencies with enhanced stability for
+                  commercial applications.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Card 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top" alt="Neuroscience">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">Neuroscience</span>
+                <h4 class="card-title">Brain-Computer Interfaces</h4>
+                <p class="card-text">Developing non-invasive neural interfaces to restore mobility for patients with
+                  spinal cord injuries.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Card 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1708011271954-c0d2b3155ded?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top" alt="Quantum Computing">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">Quantum Tech</span>
+                <h4 class="card-title">Quantum Algorithms</h4>
+                <p class="card-text">Designing quantum algorithms that outperform classical counterparts in optimization
+                  problems.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Card 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="research-card">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top" alt="Climate Science">
+              <div class="card-body">
+                <span class="badge rounded-pill mb-2">Climate Science</span>
+                <h4 class="card-title">Carbon Capture Solutions</h4>
+                <p class="card-text">Novel materials for direct air capture of CO2 with improved energy efficiency and
+                  scalability.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Stats Section ======= -->
+    <section class="stats py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-mortarboard-fill"></i>
+              <h3>150+</h3>
+              <p>Researchers</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-book-fill"></i>
+              <h3>320+</h3>
+              <p>Publications</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <!-- <i class="bi bi-flask"></i> -->
+              <i class="bi bi-thermometer-high"></i>
+              <h3>45+</h3>
+              <p>Research Labs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-award-fill"></i>
+              <h3>28</h3>
+              <p>Patents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Featured Research Section ======= -->
+    <section class="featured py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Featured Research</h2>
+          <p class="text-muted">Highlighted projects making significant impacts</p>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1132&q=80"
+              class="img-fluid rounded" alt="Featured Research">
+          </div>
+          <div class="col-lg-6">
+            <h3>Revolutionizing Drug Discovery with AI</h3>
+            <p class="text-muted">Our interdisciplinary team has developed a novel AI platform that accelerates drug
+              discovery by predicting molecular interactions with unprecedented accuracy.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> 10x faster than traditional methods
+              </li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> 85% prediction accuracy in clinical
+                trials
+              </li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> 3 new drug candidates in pipeline
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1681433419747-f5c114430ab5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid rounded" alt="Featured Research">
+          </div>
+          <div class="col-lg-6">
+            <h3>Breakthrough in Battery Technology</h3>
+            <p class="text-muted">Our materials science team has created a new solid-state battery design that offers
+              higher energy density, faster charging, and improved safety.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> 40% increase in energy density</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> Charges in 1/3 the time of
+                lithium-ion
+              </li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> No thermal runaway risk</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // Load footer
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => (document.getElementById("footer").innerHTML = data));
+  </script>
+  <!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Function to animate the counter
+      function animateCounter(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const current = Math.floor(progress * (end - start) + start);
+          // Preserve the "+" suffix if present
+          const suffix = element.textContent.includes('+') ? '+' : '';
+          element.textContent = current + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          }
+        };
+        requestAnimationFrame(step);
+      }
+
+      // Intersection Observer to trigger animation when element is in view
+      const statsItems = document.querySelectorAll('.stats-item h3');
+      const observerOptions = {
+        root: null,
+        threshold: 0.5 // Trigger when 50% of the element is visible
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const element = entry.target;
+            // Extract the numeric part (e.g., 150 from "150+")
+            const numberText = element.textContent.replace(/\D/g, '');
+            const targetNumber = parseInt(numberText, 10);
+            // Animate from 0 to the target number over 2000ms (2 seconds)
+            animateCounter(element, 0, targetNumber, 2000);
+            // Stop observing after animation starts
+            observer.unobserve(element);
+          }
+        });
+      }, observerOptions);
+
+      // Observe each stats item
+      statsItems.forEach(item => {
+        observer.observe(item);
+      });
+    });
+  </script>
+</body>
+
+</html>
