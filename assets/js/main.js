@@ -147,9 +147,13 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdown: [
         { name: "About us", href: "about.html" },
         { name: "Academics", href: "academic.html" },
-        { name: "Alumni", href: "#" },
-        { name: "Registrar", href: "http://196.188.42.93:2123/", target:"_blank" },
-        { name: "Admission", href: "#" },
+        { name: "Alumni", href: "alumni.html" },
+        {
+          name: "Registrar",
+          href: "http://196.188.42.93:2123/",
+          target: "_blank",
+        },
+        { name: "Admission", href: "" },
       ],
     },
     { name: "News and Events", href: "events.html" },
@@ -191,8 +195,23 @@ document.addEventListener("DOMContentLoaded", function () {
         item.dropdown.forEach((dropdownItem) => {
           const dropdownLi = document.createElement("li");
           const dropdownA = document.createElement("a");
-          dropdownA.href = dropdownItem.href;
-          dropdownA.target = dropdownItem.target;
+
+          // Handle missing or empty href
+          if (dropdownItem.href) {
+            dropdownA.href = dropdownItem.href;
+          } else {
+            dropdownA.href = "#";
+            dropdownA.classList.add("disabled"); // Optional: style it
+            dropdownA.addEventListener("click", function (e) {
+              e.preventDefault(); // prevent navigation if href is empty
+            });
+          }
+
+          // Only set target if "_blank"
+          if (dropdownItem.target === "_blank") {
+            dropdownA.target = "_blank";
+          }
+
           dropdownA.textContent = dropdownItem.name;
           dropdownLi.appendChild(dropdownA);
           dropdownUl.appendChild(dropdownLi);
@@ -202,12 +221,15 @@ document.addEventListener("DOMContentLoaded", function () {
         li.appendChild(dropdownUl);
 
         // Toggle dropdown on click
-        a.querySelector(".toggle-dropdown").addEventListener("click", function (e) {
-          e.preventDefault();
-          dropdownUl.classList.toggle("dropdown-active");
-          li.classList.toggle("active");
-          e.stopImmediatePropagation();
-        });
+        a.querySelector(".toggle-dropdown").addEventListener(
+          "click",
+          function (e) {
+            e.preventDefault();
+            dropdownUl.classList.toggle("dropdown-active");
+            li.classList.toggle("active");
+            e.stopImmediatePropagation();
+          }
+        );
       } else {
         if (item.name === "Home") {
           a.innerHTML = "Home<br>";
@@ -250,3 +272,68 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Show button after scrolling 300px
+window.addEventListener("scroll", function () {
+  const button = document.querySelector(".whatsapp-button");
+  if (window.scrollY > 300) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+});
+
+// Open WhatsApp with predefined message
+function openWhatsApp() {
+  const phoneNumber = "+251974755555"; // Replace with your WhatsApp number
+  const message = encodeURIComponent(
+    "Hello! I have a question about your services."
+  );
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(whatsappURL, "_blank");
+}
+
+//Image scroll JS
+
+AOS.init({
+  duration: 1000,
+  once: true,
+});
+
+// Carousel functionality
+const carouselImages = document.querySelectorAll(".carousel img");
+const carouselDots = document.querySelectorAll(".carousel-dot");
+let currentIndex = 0;
+const totalImages = carouselImages.length;
+
+// Function to update carousel
+function updateCarousel() {
+  carouselImages.forEach((img, index) => {
+    img.classList.toggle("active", index === currentIndex);
+  });
+  carouselDots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentIndex);
+  });
+}
+
+// Auto-slide every 5 seconds
+function autoSlide() {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateCarousel();
+}
+
+// Manual navigation via dots
+carouselDots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    currentIndex = parseInt(dot.getAttribute("data-index"));
+    updateCarousel();
+    clearInterval(autoSlideInterval); // Reset auto-slide on manual interaction
+    autoSlideInterval = setInterval(autoSlide, 5000);
+  });
+});
+
+// Start auto-slide
+let autoSlideInterval = setInterval(autoSlide, 5000);
+
+// Initial update
+updateCarousel();

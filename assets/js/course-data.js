@@ -31,7 +31,7 @@ const courses = [
     category: "Nursing",
     description:
       "Transform lives and build a rewarding career with a BSc in Nursing. Gain hands-on clinical skills, critical thinking abilities, and compassionate care expertise to excel in diverse healthcare settings. Begin your journey today and make a real difference in the world of healthcare!",
-    duration: "2 Years",
+    duration: "4 Years",
     degree: "M.Sc. Degree",
     mode: "Regular and Extension",
   },

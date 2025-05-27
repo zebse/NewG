@@ -39,6 +39,8 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS CSS 
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
@@ -61,27 +63,38 @@
     </header>
     <main class="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-        <img src="assets/img/hero.jpg" alt="" data-aos="fade-in" />
+      <section id="hero" class="hero section">
+        <!-- Carousel container -->
+        <div class="carousel">
+          <img src="assets/img/hero.jpg" alt="Hero Image 1" class="active" />
+          <img src="assets/img/hero1.jpg" alt="Hero Image 2" />
+          <img src="assets/img/about.jpg" alt="Hero Image 3" />
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="carousel-dots">
+          <span class="carousel-dot active" data-index="0"></span>
+          <span class="carousel-dot" data-index="1"></span>
+          <span class="carousel-dot" data-index="2"></span>
+        </div>
 
         <div class="container">
           <h2 data-aos="fade-up" data-aos-delay="100">
             New Generation University College
           </h2>
+          <h4 class="fst-italic">Center for Excellence</h4>
           <p>
             Dedicated to delivering exceptional, world-class education, New
             Generation University College empowers the next generation of
             leaders in Ethiopia and beyond through innovative, high-quality
             academic experiences.
           </p>
-          <br />
-          <h4 class="fst-italic">Center for Excellence</h4>
-          <!-- <p data-aos="fade-up" data-aos-delay="200">Center for Excellence</p> -->
           <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
             <a href="academic.html" class="btn-get-started">Get Started</a>
           </div>
         </div>
       </section>
+
       <!-- /Hero Section -->
 
       <!-- About Section -->
@@ -297,138 +310,172 @@
           <div class="row mb-4">
             <div class="col-12">
               <h2 class="text-center">Undergraduate Programs</h2>
-              <h5 class="text-center">
-                Available in Regular and Extension at Addis Ababa & Nekemte
-                Campuses
-              </h5>
             </div>
           </div>
-          <div class="row gy-4">
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #ffbb2c"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >BA in Accounting & Finance</a
-                  >
-                </h3>
+          <div class="campus-box">
+            <h3 class="campus-title">Addis Ababa Campus</h3>
+            <div class="row gy-4">
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #4bba22"></i>
+                  <h3>
+                    <a href="" class="stretched-link"
+                      >BA in Business Administration</a
+                    >
+                  </h3>
+                </div>
               </div>
+              <!-- End item -->
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #ffbb2c"></i>
+                  <h3>
+                    <a href="" class="stretched-link"
+                      >BSc in Computer Science</a
+                    >
+                  </h3>
+                </div>
+              </div>
+              <!-- End item -->
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #292315"></i>
+                  <h3>
+                    <a href="" class="stretched-link"
+                      >BA in Logistics & Supply Chain Management</a
+                    >
+                  </h3>
+                </div>
+              </div>
+              <!-- End item -->
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #130961"></i>
+                  <h3>
+                    <a href="" class="stretched-link">BA in GSIR</a>
+                  </h3>
+                </div>
+              </div>
+              <!-- End item -->
+               <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #0eb0b6"></i>
+                  <h3>
+                    <a href="" class="stretched-link">BA in Marketing</a>
+                  </h3>
+                </div>
+              </div>
+              <!-- End item -->
             </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #5578ff"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >BA in Business Administration</a
-                  >
-                </h3>
+          </div>
+          <!-- End Addis Ababa campus -->
+          <!-- Nekemte Campus Box -->
+          <div class="campus-box">
+            <h3 class="campus-title">Nekemte Campus</h3>
+            <div class="row gy-4">
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #b20969"></i>
+                  <h3>
+                    <a href="" class="stretched-link"
+                      >BA in Sociology & Social Anthropology</a
+                    >
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #e80368"></i>
-                <h3>
-                  <a href="" class="stretched-link">BSC in Computer Science</a>
-                </h3>
+              <!-- End item -->
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #ffa76e"></i>
+                  <h3>
+                    <a href="" class="stretched-link">PHO in Public Health</a>
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #e361ff"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >BA in Logistics & Supply Chain Management</a
-                  >
-                </h3>
+              <!-- End item -->
+              <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #29cc61"></i>
+                  <h3><a href="" class="stretched-link">BSC in Nursing</a></h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #b20969"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >BA in Sociology & Social Anthropology</a
-                  >
-                </h3>
+              <!-- End item -->
+               <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #71143c"></i>
+                  <h3><a href="" class="stretched-link">BA in Economics</a></h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #11dbcf"></i>
-                <h3>
-                  <a href="" class="stretched-link"
-                    >BA in Sociology & Social Anthropology</a
-                  >
-                </h3>
+              <!-- End item -->
+               <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #1b0b3670"></i>
+                  <h3><a href="" class="stretched-link">BA in Cooperative Accounting & Auditing</a></h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #ffa76e"></i>
-                <h3>
-                  <a href="" class="stretched-link">PHO in Public Health</a>
-                </h3>
+              <!-- End item -->
+               <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #371094f2"></i>
+                  <h3><a href="" class="stretched-link">BA in Accounting & Finance</a></h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #29cc61"></i>
-                <h3><a href="" class="stretched-link">BSC in Nursing</a></h3>
+              <!-- End item -->
+               <div
+                class="col-lg-3 col-md-6 col-sm-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="features-item">
+                  <i class="bi bi-mortarboard" style="color: #974890"></i>
+                  <h3><a href="" class="stretched-link">TVET Program</a></h3>
+                </div>
               </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-mortarboard" style="color: #ec168162"></i>
-                <h3><a href="" class="stretched-link">TVET Program</a></h3>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 col-sm-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="features-item">
-                <i class="bi bi-three-dots" style="color: #ff0061"></i>
-                <h3>
-                  <a href="" class="stretched-link">and many others ...</a>
-                </h3>
-              </div>
+              <!-- End item -->
             </div>
           </div>
 
@@ -474,6 +521,11 @@
       </section>
     </main>
 
+    <!-- WhatsApp button -->
+    <button class="whatsapp-button" onclick="openWhatsApp()">
+      <i class="fab fa-whatsapp"></i><span>Chat with Us</span>
+    </button>
+
     <!-- ======= Footer ======= -->
     <div id="footer"></div>
 
@@ -495,6 +547,19 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+    <script>
+      window.addEventListener("scroll", () => {
+        const elements = document.querySelectorAll(".parallax-image-wrapper");
+
+        elements.forEach((wrapper) => {
+          const speed = parseFloat(wrapper.dataset.speed);
+          const image = wrapper.querySelector("img");
+          const offset = window.scrollY * speed;
+
+          image.style.transform = `translateY(${offset}px)`;
+        });
+      });
+    </script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -503,8 +568,8 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - New Generation University College</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="contact-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- <img src="assets/img/logo.png" alt="" /> -->
+          <h1 class="sitename">NGUC</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul></ul>
+          <!-- Empty ul to be populated by JavaScript -->
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+      <style>
+        /* Form section styling */
+        .alumni-form-section {
+          padding: 60px 0;
+          background-color: #f8f9fa;
+          min-height: 80vh; /* Ensure section takes up full viewport height */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        /* Form box styling */
+        .form-box {
+          max-width: 800px;
+          width: 100%;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-box h2 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+          text-align: center;
+          color: #343a40;
+        }
+
+        /* Form field styling */
+        .form-label {
+          font-weight: 500;
+          color: #495057;
+        }
+
+        .form-control,
+        .form-select {
+          border-radius: 5px;
+          border: 1px solid #ced4da;
+          padding: 10px;
+          font-size: 1rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+          border-color: #a63c3c;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Submit button styling */
+        .btn-submit {
+          background-color: #a63c3c;
+          border: none;
+          padding: 12px 30px;
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 50px;
+          transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+          background-color: #a63c3c;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .form-box {
+            padding: 20px;
+          }
+
+          .form-box h2 {
+            font-size: 2rem;
+          }
+
+          .form-control,
+          .form-select {
+            font-size: 0.9rem;
+            padding: 8px;
+          }
+
+          .btn-submit {
+            padding: 10px 25px;
+            font-size: 0.9rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .form-box {
+            padding: 15px;
+          }
+
+          .form-box h2 {
+            font-size: 1.5rem;
+          }
+
+          .form-label {
+            font-size: 0.9rem;
+          }
+
+          .form-control,
+          .form-select {
+            font-size: 0.85rem;
+            padding: 6px;
+          }
+
+          .btn-submit {
+            padding: 8px 20px;
+            font-size: 0.85rem;
+          }
+        }
+      </style>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Alumni</h1>
+                <p class="mb-0">
+                  New Generation University College (NGUC) takes immense pride
+                  in its vibrant alumni community, a testament to the
+                  institution's commitment to fostering excellence and
+                  leadership. Our alumni, spread across Ethiopia and beyond,
+                  have made significant contributions in diverse fields,
+                  embodying the values of innovation and service instilled
+                  during their time at NGUC. They serve as inspiring role
+                  models, connecting past and present students through
+                  mentorship and collaboration. This alumni network continues to
+                  grow, strengthening NGUC's legacy as a center for
+                  transformative education.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="breadcrumbs">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Alumni</li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Alumni Section -->
+      <section class="alumni-form-section">
+        <div class="form-box">
+          <h2>Alumni Registration Form</h2>
+          <form action="process_alumni.php" method="POST">
+            <!-- Name of Graduate -->
+            <div class="mb-3">
+              <label for="graduateName" class="form-label"
+                >Name of Graduate</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="graduateName"
+                name="graduateName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <!-- Entry Year -->
+            <div class="mb-3">
+              <label for="entryYear" class="form-label">Entry Year</label>
+              <select class="form-select" id="entryYear" name="entryYear" required>
+                <option value="" disabled selected>
+                  Select your entry year
+                </option>
+                <script>
+                  const currentYear = new Date().getFullYear();
+                  for (let year = 2001; year <= currentYear; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                  }
+                </script>
+              </select>
+            </div>
+
+            <!-- Graduation Year -->
+            <div class="mb-3">
+              <label for="graduationYear" class="form-label"
+                >Graduation Year</label
+              >
+              <select class="form-select" id="graduationYear" name="graduationYear" required>
+                <option value="" disabled selected>
+                  Select your graduation year
+                </option>
+                <script>
+                  //const currYear = new Date().getFullYear();
+                  for (let year = 2001; year <= currentYear; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                  }
+                </script>
+              </select>
+            </div>
+
+            <!-- Department -->
+            <div class="mb-3">
+              <label for="department" class="form-label">Department</label>
+              <select class="form-select" id="department" name="department" required>
+                <option value="" disabled selected>
+                  Select your department
+                </option>
+                <option value="computer-science">Computer Science</option>
+                <option value="accounting-finance">Accounting & Finance</option>
+                <option value="business-management">
+                  Business Administration
+                </option>
+                <option value="information-technology">
+                  Logistics & Supply
+                </option>
+                <option value="economics">Economics</option>
+                <option value="nursing">Nursing</option>
+                <option value="public-health">Public health</option>
+                <option value="sociology">Sociology</option>
+              </select>
+            </div>
+
+            <!-- Place of Work After Graduation -->
+            <div class="mb-3">
+              <label for="placeOfWork" class="form-label"
+                >Place of Work After Graduation</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="placeOfWork"
+                name="placeOfWork"
+                placeholder="Enter your workplace"
+                required
+              />
+            </div>
+
+            <!-- Job Position -->
+            <div class="mb-3">
+              <label for="jobPosition" class="form-label">Job Position</label>
+              <input
+                type="text"
+                class="form-control"
+                id="jobPosition"
+                name="jobPosition"
+                placeholder="Enter your job position"
+                required
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-submit text-white">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Section -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <div id="footer"></div>
+
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <!-- End Footer -->
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
