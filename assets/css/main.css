@@ -905,7 +905,8 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 50%); */
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -917,16 +918,24 @@ section,
 }
 
 .hero h2 {
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   margin: 0;
   font-size: 48px;
   font-weight: 700;
 }
+.hero h4 {
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
 
 .hero p {
-  color: color-mix(var(--default-color), transparent 20%);
+  /* color: color-mix(var(--default-color), transparent 20%); */
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   margin: 10px 0 0 0;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .hero .btn-get-started {
@@ -2038,7 +2047,6 @@ section,
   transition: all 0.3s ease;
   text-align: center;
   white-space: nowrap;
-  display: flex;
   align-items: center;
   gap: 8px;
 }

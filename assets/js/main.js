@@ -276,16 +276,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // Show button after scrolling 300px
 window.addEventListener("scroll", function () {
   const button = document.querySelector(".whatsapp-button");
-  if (window.scrollY > 300) {
-    button.style.display = "block";
-  } else {
-    button.style.display = "none";
-  }
+  button.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
 // Open WhatsApp with predefined message
 function openWhatsApp() {
-  const phoneNumber = "+251974755555"; // Replace with your WhatsApp number
+  const phoneNumber = "+251973755555"; // Replace with your WhatsApp number
   const message = encodeURIComponent(
     "Hello! I have a question about your services."
   );
