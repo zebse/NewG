@@ -333,3 +333,26 @@ let autoSlideInterval = setInterval(autoSlide, 5000);
 
 // Initial update
 updateCarousel();
+
+//Counter
+function startCounter() {
+  const counterElement = document.getElementById('counter');
+  let current = 1000; // Starting number
+  const end = 45000; // Ending number
+  const step = 500; // Increment by 1000
+  const duration = 4000; // Total duration in milliseconds (4 second)
+  const steps = Math.floor((end - current) / step); // Number of steps
+  const intervalTime = duration / steps; // Time per step in milliseconds
+
+  const interval = setInterval(() => {
+    current += step;
+    counterElement.textContent = current.toLocaleString() + '+'; // Append + sign
+    if (current >= end) {
+      clearInterval(interval);
+      counterElement.textContent = end.toLocaleString() + '+'; // Ensure exact end value with +
+    }
+  }, intervalTime);
+}
+
+// Start counter when the page loads
+window.onload = startCounter;

@@ -9,22 +9,34 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37423b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #a63c3c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37423b;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #a63c3c;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #272828; /* The default color of the main navmenu links */
-  --nav-hover-color: #5fcf80; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #272828; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #5fcf80; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #272828;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #5fcf80;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #272828;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #5fcf80;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -134,10 +146,8 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(
-    var(--accent-color) 50%,
-    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
-  );
+  background: radial-gradient(var(--accent-color) 50%,
+      color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -324,7 +334,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -363,11 +373,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -379,7 +389,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -481,7 +491,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -508,7 +518,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -701,29 +711,48 @@ h6 {
 
 @keyframes animate-preloader {
   0% {
-    transform: rotate(0deg) scale(1); /* Start with no rotation and normal size */
-    opacity: 1; /* Fully opaque */
-    border-color: #3498db; /* Start with a blue color (adjust as needed) */
+    transform: rotate(0deg) scale(1);
+    /* Start with no rotation and normal size */
+    opacity: 1;
+    /* Fully opaque */
+    border-color: #3498db;
+    /* Start with a blue color (adjust as needed) */
   }
+
   25% {
-    transform: rotate(90deg) scale(1.2); /* Rotate 90deg and slightly scale up */
-    opacity: 0.8; /* Slightly fade */
-    border-color: #2ecc71; /* Shift to green */
+    transform: rotate(90deg) scale(1.2);
+    /* Rotate 90deg and slightly scale up */
+    opacity: 0.8;
+    /* Slightly fade */
+    border-color: #2ecc71;
+    /* Shift to green */
   }
+
   50% {
-    transform: rotate(180deg) scale(0.8); /* Half rotation, scale down */
-    opacity: 0.6; /* More faded */
-    border-color: #e74c3c; /* Shift to red */
+    transform: rotate(180deg) scale(0.8);
+    /* Half rotation, scale down */
+    opacity: 0.6;
+    /* More faded */
+    border-color: #e74c3c;
+    /* Shift to red */
   }
+
   75% {
-    transform: rotate(270deg) scale(1.1); /* 3/4 rotation, scale up again */
-    opacity: 0.8; /* Fade back in */
-    border-color: #f1c40f; /* Shift to yellow */
+    transform: rotate(270deg) scale(1.1);
+    /* 3/4 rotation, scale up again */
+    opacity: 0.8;
+    /* Fade back in */
+    border-color: #f1c40f;
+    /* Shift to yellow */
   }
+
   100% {
-    transform: rotate(360deg) scale(1); /* Full rotation, back to normal size */
-    opacity: 1; /* Fully opaque again */
-    border-color: #3498db; /* Back to blue */
+    transform: rotate(360deg) scale(1);
+    /* Full rotation, back to normal size */
+    opacity: 1;
+    /* Fully opaque again */
+    border-color: #3498db;
+    /* Back to blue */
   }
 }
 
@@ -784,8 +813,7 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -811,11 +839,11 @@ h6 {
   font-weight: 600;
 }
 
-.page-title nav ol li + li {
+.page-title nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -835,6 +863,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 66px;
@@ -906,7 +935,8 @@ section,
 .hero:before {
   content: "";
   /* background: color-mix(in srgb, var(--background-color), transparent 50%); */
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background: rgba(0, 0, 0, 0.5);
+  /* dark overlay */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -924,6 +954,7 @@ section,
   font-size: 48px;
   font-weight: 700;
 }
+
 .hero h4 {
   color: #fff;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
@@ -965,6 +996,7 @@ section,
     font-size: 18px;
   }
 }
+
 /* Additional CSS for Carousel */
 .carousel {
   position: absolute;
@@ -1274,8 +1306,7 @@ section,
 
 .courses .trainer {
   padding-top: 15px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .courses .trainer .trainer-profile img {
@@ -1587,8 +1618,7 @@ section,
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 600;
   font-size: 15px;
 }
@@ -1887,7 +1917,7 @@ section,
   padding-bottom: 40px;
 }
 
-.contact .info-item + .info-item {
+.contact .info-item+.info-item {
   margin-top: 40px;
 }
 
@@ -1930,11 +1960,9 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 50%
-  );
+  background-color: color-mix(in srgb,
+      var(--background-color),
+      transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1989,11 +2017,13 @@ section,
 }
 
 .course-details::before {
-  top: -10px; /* Line above the section */
+  top: -10px;
+  /* Line above the section */
 }
 
 .course-details::after {
-  bottom: -10px; /* Line below the section */
+  bottom: -10px;
+  /* Line below the section */
 }
 
 .details-list {
@@ -2025,7 +2055,8 @@ section,
   .course-details::before,
   .course-details::after {
     left: 10px;
-    right: 10px; /* Adjust line width on small screens */
+    right: 10px;
+    /* Adjust line width on small screens */
   }
 }
 
@@ -2034,8 +2065,10 @@ section,
   position: fixed;
   bottom: 200px;
   right: -5px;
-  display: none; /* Hidden by default */
-  background-color: #25d366; /* WhatsApp green */
+  display: none;
+  /* Hidden by default */
+  background-color: #25d366;
+  /* WhatsApp green */
   color: white;
   border: none;
   border-radius: 50px;
@@ -2106,4 +2139,322 @@ section,
   background-color: #e9ecef;
   padding: 10px;
   border-radius: 5px;
+}
+
+/* Message CSS */
+.blockquote {
+  font-style: italic;
+  border-left: 2.5px solid #a63c3c;
+  padding-left: 1rem;
+}
+
+@media (max-width: 576px) {
+  .display-5 {
+    font-size: 1.75rem !important;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+/*Organizational sructure CSS */
+#desc {
+  font-family: var(--heading-font);
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80em;
+  font-family: var(--heading-font);
+}
+
+#container {
+  float: left;
+  padding: 1em;
+  width: 100%;
+}
+
+ol.organizational-chart,
+ol.organizational-chart ol,
+ol.organizational-chart li,
+ol.organizational-chart li>div {
+  position: relative;
+}
+
+ol.organizational-chart,
+ol.organizational-chart ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.organizational-chart {
+  text-align: center;
+}
+
+ol.organizational-chart ol {
+  padding-top: 1em;
+}
+
+ol.organizational-chart ol:before,
+ol.organizational-chart ol:after,
+ol.organizational-chart li:before,
+ol.organizational-chart li:after,
+ol.organizational-chart>li>div:before,
+ol.organizational-chart>li>div:after {
+  background-color: #b7a6aa;
+  content: '';
+  position: absolute;
+}
+
+ol.organizational-chart ol>li {
+  padding: 1em 0 0 1em;
+}
+
+ol.organizational-chart>li ol:before {
+  height: 1em;
+  left: 50%;
+  top: 0;
+  width: 3px;
+}
+
+ol.organizational-chart>li ol:after {
+  height: 3px;
+  left: 3px;
+  top: 1em;
+  width: 50%;
+}
+
+ol.organizational-chart>li ol>li:not(:last-of-type):before {
+  height: 3px;
+  left: 0;
+  top: 2em;
+  width: 1em;
+}
+
+ol.organizational-chart>li ol>li:not(:last-of-type):after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 3px;
+}
+
+ol.organizational-chart>li ol>li:last-of-type:before {
+  height: 3px;
+  left: 0;
+  top: 2em;
+  width: 1em;
+}
+
+ol.organizational-chart>li ol>li:last-of-type:after {
+  height: 2em;
+  left: 0;
+  top: 0;
+  width: 3px;
+}
+
+ol.organizational-chart li>div {
+  background-color: #fff;
+  border-radius: 3px;
+  min-height: 2em;
+  padding: 0.5em;
+}
+
+/*** PRIMARY ***/
+ol.organizational-chart>li>div {
+  background-color: #a2ed56;
+  margin-right: 1em;
+}
+
+ol.organizational-chart>li>div:before {
+  bottom: 2em;
+  height: 3px;
+  right: -1em;
+  width: 1em;
+}
+
+ol.organizational-chart>li>div:first-of-type:after {
+  bottom: 0;
+  height: 2em;
+  right: -1em;
+  width: 3px;
+}
+
+ol.organizational-chart>li>div+div {
+  margin-top: 1em;
+}
+
+ol.organizational-chart>li>div+div:after {
+  height: calc(100% + 1em);
+  right: -1em;
+  top: -1em;
+  width: 3px;
+}
+
+/*** SECONDARY ***/
+ol.organizational-chart>li>ol:before {
+  left: inherit;
+  right: 0;
+}
+
+ol.organizational-chart>li>ol:after {
+  left: 0;
+  width: 100%;
+}
+
+ol.organizational-chart>li>ol>li>div {
+  background-color: #83e4e2;
+}
+
+/*** TERTIARY ***/
+ol.organizational-chart>li>ol>li>ol>li>div {
+  background-color: #fd6470;
+}
+
+/*** QUATERNARY ***/
+ol.organizational-chart>li>ol>li>ol>li>ol>li>div {
+  background-color: #fca858;
+}
+
+/*** QUINARY ***/
+ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
+  background-color: #fddc32;
+}
+
+/*** MEDIA QUERIES ***/
+@media only screen and (min-width: 64em) {
+
+  ol.organizational-chart {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+
+  /* PRIMARY */
+  ol.organizational-chart>li>div {
+    display: inline-block;
+    float: none;
+    margin: 0 1em 1em 1em;
+    vertical-align: bottom;
+  }
+
+  ol.organizational-chart>li>div:only-of-type {
+    margin-bottom: 0;
+    width: calc((100% / 1) - 2em - 4px);
+  }
+
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(2),
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(2)~div {
+    width: calc((100% / 2) - 2em - 4px);
+  }
+
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(3),
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(3)~div {
+    width: calc((100% / 3) - 2em - 4px);
+  }
+
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(4),
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(4)~div {
+    width: calc((100% / 4) - 2em - 4px);
+  }
+
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(5),
+  ol.organizational-chart>li>div:first-of-type:nth-last-of-type(5)~div {
+    width: calc((100% / 5) - 2em - 4px);
+  }
+
+  ol.organizational-chart>li>div:before,
+  ol.organizational-chart>li>div:after {
+    bottom: -1em !important;
+    top: inherit !important;
+  }
+
+  ol.organizational-chart>li>div:before {
+    height: 1em !important;
+    left: 50% !important;
+    width: 3px !important;
+  }
+
+  ol.organizational-chart>li>div:only-of-type:after {
+    display: none;
+  }
+
+  ol.organizational-chart>li>div:first-of-type:not(:only-of-type):after,
+  ol.organizational-chart>li>div:last-of-type:not(:only-of-type):after {
+    bottom: -1em;
+    height: 3px;
+    width: calc(50% + 1em + 3px);
+  }
+
+  ol.organizational-chart>li>div:first-of-type:not(:only-of-type):after {
+    left: calc(50% + 3px);
+  }
+
+  ol.organizational-chart>li>div:last-of-type:not(:only-of-type):after {
+    left: calc(-1em - 3px);
+  }
+
+  ol.organizational-chart>li>div+div:not(:last-of-type):after {
+    height: 3px;
+    left: -2em;
+    width: calc(100% + 4em);
+  }
+
+  /* SECONDARY */
+  ol.organizational-chart>li>ol {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  ol.organizational-chart>li>ol:before,
+  ol.organizational-chart>li>ol>li:before {
+    height: 1em !important;
+    left: 50% !important;
+    top: 0 !important;
+    width: 3px !important;
+  }
+
+  ol.organizational-chart>li>ol:after {
+    display: none;
+  }
+
+  ol.organizational-chart>li>ol>li {
+    flex-grow: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+
+  ol.organizational-chart>li>ol>li:only-of-type {
+    padding-top: 0;
+  }
+
+  ol.organizational-chart>li>ol>li:only-of-type:before,
+  ol.organizational-chart>li>ol>li:only-of-type:after {
+    display: none;
+  }
+
+  ol.organizational-chart>li>ol>li:first-of-type:not(:only-of-type):after,
+  ol.organizational-chart>li>ol>li:last-of-type:not(:only-of-type):after {
+    height: 3px;
+    top: 0;
+    width: 50%;
+  }
+
+  ol.organizational-chart>li>ol>li:first-of-type:not(:only-of-type):after {
+    left: 50%;
+  }
+
+  ol.organizational-chart>li>ol>li:last-of-type:not(:only-of-type):after {
+    left: 0;
+  }
+
+  ol.organizational-chart>li>ol>li+li:not(:last-of-type):after {
+    height: 3px;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
 }
